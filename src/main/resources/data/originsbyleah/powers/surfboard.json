@@ -1,0 +1,33 @@
+{
+  "name": "Surf",
+  "description": "This allows someone to ride you while being in water",
+  "condition": {
+    "type": "origins:submerged_in",
+    "fluid": "minecraft:water"
+  },
+  "type": "origins:action_on_being_used",
+  "bientity_action": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:mount"
+      },
+      {
+        "type": "origins:tame"
+      }
+    ]
+  },
+  "bientity_condition": {
+    "type": "origins:distance",
+    "comparison": ">=",
+    "compare_to": 5
+  },
+  "item_condition": {
+    "type": "origins:empty"
+  },
+  "hands": [
+    "main_hand"
+  ],
+  "action_result": "success",
+  "priority": 0
+}

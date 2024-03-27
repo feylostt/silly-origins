@@ -1,0 +1,5 @@
+{
+  "death.attack.waterbending.item": "%s was bludgeoned by %s using %s",
+  "death.attack.waterbending.player": "%s was soaked by %s",
+  "death.attack.waterbending": "%s was soaked by %s"
+}

@@ -1,0 +1,14 @@
+{
+  "type": "origins:modify_projectile_damage",
+  "damage_condition": {
+    "type": "origins:projectile",
+    "projectile": "minecraft:snowball"
+  },
+  "modifier": {
+    "operation": "addition",
+    "value": 2
+  },
+  "name":"Ice packed",
+  "description":"You can freeze snowballs even further to make them hit harder.",
+  "hidden": true
+}

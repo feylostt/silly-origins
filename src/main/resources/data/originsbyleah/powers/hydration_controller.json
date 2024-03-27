@@ -1,0 +1,69 @@
+{
+  "type": "origins:multiple",
+  "hidden": true,
+  "passive_increase": {
+    "type":"origins:action_over_time",
+    "entity_action": {
+      "type":"origins:change_resource",
+      "resource":"*:hydration",
+      "change": 12
+    },
+    "interval": 20,
+    "condition": {
+      "type":"origins:or",
+      "conditions": [
+        {
+          "type": "origins:fluid_height",
+          "fluid": "minecraft:water",
+          "comparison": "!=",
+          "compare_to": 0
+        },
+        {
+          "type":"origins:in_rain"
+        }
+      ]
+    }
+  },
+  "passive_decrease": {
+    "type":"origins:action_over_time",
+    "entity_action": {
+      "type":"origins:change_resource",
+      "resource":"*:hydration",
+      "change": -1
+    },
+    "interval": 20,
+    "condition": {
+      "type":"origins:or",
+      "conditions": [
+        {
+          "type":"origins:submerged_in",
+          "fluid":"minecraft:water",
+          "inverted": true
+        },
+        {
+          "type":"origins:in_rain",
+          "inverted": true
+        }
+      ]
+    }
+  },
+  "damage_decrease": {
+    "type":"origins:action_when_damage_taken",
+    "entity_action": {
+      "type":"origins:change_resource",
+      "resource":"*:hydration",
+      "change": -2
+    }
+  },
+  "exhaust": {
+    "type": "origins:exhaust",
+    "interval": 120,
+    "exhaustion": 1,
+    "condition": {
+      "type": "origins:resource",
+      "resource": "*:hydration",
+      "comparison": "<",
+      "compare_to": 10
+    }
+  }
+}

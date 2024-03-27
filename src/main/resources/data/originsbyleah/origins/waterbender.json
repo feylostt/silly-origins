@@ -1,0 +1,15 @@
+{
+  "powers": [
+    "originsbyleah:waterbend",
+    "originsbyleah:hydration",
+    "originsbyleah:hydration_controller",
+    "origins:like_water",
+    "origins:swim_speed",
+    "originsbyleah:surfboard"
+  ],
+  "icon": "minecraft:water_bucket",
+  "order": 500,
+  "impact": 3,
+  "name": "Waterbender",
+  "description": "You are gifted the ability to manipulate water."
+}
